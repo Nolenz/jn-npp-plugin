@@ -291,7 +291,7 @@ void IndicatorPanel::paintIndicators(HDC hdc){
 
 	bool vscroll = hasStyle(m_View->m_Handle, WS_VSCROLL);
 	int scrollHHeight	= GetSystemMetrics(SM_CXHSCROLL);
-	HBRUSH hbr3DFace = (HBRUSH)GetSysColorBrush(COLOR_3DFACE); 
+	HBRUSH hbr3DFace = (HBRUSH)CreateSolidBrush(RGB(23, 23, 23));
 
 	HPEN hpen, oldPen;
 	//hpen = CreatePen(PS_SOLID, 1, RGB(0, 255, 0));
